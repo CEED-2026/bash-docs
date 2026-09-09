@@ -12,6 +12,8 @@ yarn install
 yarn docs:dev
 ```
 
+El sitio estará disponible en `http://localhost:5173/bash-docs/solved-exercises/`
+
 ## Build de producción
 
 ```bash

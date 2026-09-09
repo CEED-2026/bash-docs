@@ -1,17 +1,19 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
+import { computed } from 'vue'
 import { useData } from 'vitepress'
 
-const { frontmatter } = useData()
+const { page } = useData()
+const isSpanish = computed(() => (page.value.filePath || '').startsWith('es/'))
 </script>
 
 <template>
   <DefaultTheme.Layout v-bind="frontmatter">
     <template #nav-bar-title-before>
       <div class="custom-nav-title">
-        <img class="logo-dark" src="/icon_dark.svg" alt="BASH Fundamentos">
-        <img class="logo-light" src="/icon_light.svg" alt="BASH Fundamentos">
-        <span class="title">BASH Fundamentos</span>
+        <img class="logo-dark" src="/icon_dark.svg" :alt="isSpanish ? 'BASH Fundamentos' : 'BASH Fundamentals'">
+        <img class="logo-light" src="/icon_light.svg" :alt="isSpanish ? 'BASH Fundamentos' : 'BASH Fundamentals'">
+        <span class="title">{{ isSpanish ? 'BASH Fundamentos' : 'BASH Fundamentals' }}</span>
       </div>
     </template>
   </DefaultTheme.Layout>
