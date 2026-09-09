@@ -31,6 +31,12 @@ const { frontmatter } = useData()
   color: var(--vp-c-text-1);
 }
 
+.logo-dark,
+.logo-light {
+  width: 24px;
+  height: 24px;
+}
+
 .logo-dark {
   display: none;
 }
