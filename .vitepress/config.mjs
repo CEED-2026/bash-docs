@@ -17,10 +17,10 @@ export default defineConfig({
           { text: 'Decisión', link: '/content/300-conditional-constructs' },
           { text: 'Bucles', link: '/content/400-looping-constructs' },
           { text: 'Parámetros', link: '/content/500-parameters' },
-          { text: 'Funciones', link: '/content/600-functions' },
-          { text: 'Ejercicios resueltos', link: '/solved-exercises/' }
+          { text: 'Funciones', link: '/content/600-functions' }
         ]
       },
+      { text: 'Ejercicios resueltos', link: '/solved-exercises/' },
       {
         text: 'Recursos adicionales',
         items: [
@@ -42,10 +42,10 @@ export default defineConfig({
             { text: 'Decisión', link: '/content/300-conditional-constructs' },
             { text: 'Bucles', link: '/content/400-looping-constructs' },
             { text: 'Parámetros', link: '/content/500-parameters' },
-            { text: 'Funciones', link: '/content/600-functions' },
-            { text: 'Ejercicios resueltos', link: '/solved-exercises/' }
+            { text: 'Funciones', link: '/content/600-functions' }
           ]
         },
+        { text: 'Ejercicios resueltos', link: '/solved-exercises/' },
         {
           text: 'Recursos adicionales',
           items: [
