@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "BASH Fundamentos",
   description: "Manual y guía de Bash Scripting",
+  base: '/bash-docs/',
   themeConfig: {
     logo: '/icon_dark.svg',
     nav: [
